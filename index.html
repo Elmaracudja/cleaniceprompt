@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Créateur de Scène Cinématographique</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; }
+        textarea { width: 100%; height: 200px; }
+    </style>
+</head>
+<body>
+    <h1>Créateur de Scène Cinématographique</h1>
+    <form id="sceneForm">
+        <label for="setting">Setting:</label>
+        <input type="text" id="setting" placeholder="Lieu et moment de la journée"><br><br>
+
+        <label for="lighting">Lighting:</label>
+        <input type="text" id="lighting" placeholder="Type de lumière (naturelle/artificielle)"><br><br>
+
+        <label for="camera">Camera:</label>
+        <input type="text" id="camera" placeholder="Angles de caméra"><br><br>
+
+        <label for="mood">Mood:</label>
+        <input type="text" id="mood" placeholder="Atmosphère"><br><br>
+
+        <h3>Technical Parameters for Professional Cinematic Rendering</h3>
+        <label for="resolution">Resolution:</label>
+        <input type="text" id="resolution" value="4K"><br><br>
+
+        <label for="aspectRatio">Aspect Ratio:</label>
+        <input type="text" id="aspectRatio" value="16:9"><br><br>
+
+        <label for="frameRate">Frame Rate:</label>
+        <input type="text" id="frameRate" value="24 fps"><br><br>
+
+        <label for="shutterSpeed">Shutter Speed:</label>
+        <input type="text" id="shutterSpeed" value="1/50"><br><br>
+
+        <label for="iso">ISO:</label>
+        <input type="text" id="iso" value="800"><br><br>
+
+        <label for="whiteBalance">White Balance:</label>
+        <input type="text" id="whiteBalance" value="Daylight"><br><br>
+
+        <label for="colorProfile">Color Profile:</label>
+        <input type="text" id="colorProfile" value="Rec. 709"><br><br>
+
+        <label for="stabilization">Stabilization:</label>
+        <input type="text" id="stabilization" value="3-axis gimbal"><br><br>
+
+        <button type="button" onclick="generateScene()">Générer la Scène</button>
+    </form>
+
+    <h2>Scène Générée:</h2>
+    <textarea id="generatedScene" readonly></textarea>
+
+    <script src="script.js"></script>
+</body>
+</html>
