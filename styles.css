@@ -1,45 +1,10 @@
-/* Styles de base pour le corps */
 body {
-    font-family: Arial, sans-serif; /* Police par défaut */
-    margin: 0; /* Supprime les marges par défaut */
-    padding: 0; /* Supprime les espacements par défaut */
-    background-color: #f4f4f4; /* Couleur de fond */
+    font-family: Arial, sans-serif;
+    margin: 20px;
 }
 
-/* En-tête */
-header {
-    background: #333; /* Couleur de fond de l'en-tête */
-    color: #fff; /* Couleur du texte */
-    padding: 10px 20px; /* Espacement intérieur */
-    text-align: center; /* Centrer le texte */
-}
-
-/* Liens */
-a {
-    color: #3498db; /* Couleur des liens */
-    text-decoration: none; /* Supprime le soulignement */
-}
-
-a:hover {
-    text-decoration: underline; /* Ajoute le soulignement au survol */
-}
-
-/* Sections */
-section {
-    margin: 20px; /* Marge autour des sections */
-    padding: 20px; /* Espacement intérieur */
-    background: #fff; /* Couleur de fond des sections */
-    border-radius: 8px; /* Coins arrondis */
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Ombre */
-}
-
-/* Pied de page */
-footer {
-    background: #333; /* Couleur de fond du pied de page */
-    color: #fff; /* Couleur du texte */
-    text-align: center; /* Centrer le texte */
-    padding: 10px 0; /* Espacement intérieur */
-    position: relative;
-    bottom: 0;
-    width: 100%; /* Largeur complète */
+textarea {
+    width: 100%;
+    height: 200px;
+    margin-top: 10px;
 }
