@@ -12,29 +12,22 @@ function generateScene() {
     const colorProfile = document.getElementById('colorProfile').value;
     const stabilization = document.getElementById('stabilization').value;
 
-    const scene = `
-**Scene**
-- **Setting**: ${setting}
+    const generatedScene = `
+        **Setting**: ${setting}
+        **Lighting**: ${lighting}
+        **Camera**: ${camera}
+        **Mood**: ${mood}
+        
+        **Technical Parameters**:
+        - Resolution: ${resolution}
+        - Aspect Ratio: ${aspectRatio}
+        - Frame Rate: ${frameRate}
+        - Shutter Speed: ${shutterSpeed}
+        - ISO: ${iso}
+        - White Balance: ${whiteBalance}
+        - Color Profile: ${colorProfile}
+        - Stabilization: ${stabilization}
+    `;
 
-**Lighting**
-- **Type**: ${lighting}
-
-**Camera**
-- **Angles**: ${camera}
-
-**Mood**
-- **Atmosphere**: ${mood}
-
-**Technical Parameters for Professional Cinematic Rendering**
-- **Resolution**: ${resolution}
-- **Aspect ratio**: ${aspectRatio}
-- **Frame rate**: ${frameRate}
-- **Shutter speed**: ${shutterSpeed}
-- **ISO**: ${iso}
-- **White balance**: ${whiteBalance}
-- **Color profile**: ${colorProfile}
-- **Stabilization**: ${stabilization}
-`;
-
-    document.getElementById('generatedScene').value = scene;
+    document.getElementById('generatedScene').value = generatedScene;
 }
